@@ -1,29 +1,13 @@
 # vue-shopapp
 
-## Project setup
-```
-npm install
-```
+## 描述
+> 这里收纳关于Vue-shopapp的核心Demo
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 目录
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Webpack
+---图片的别名
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue-lazy
+---骨架屏
+---图片的出错图片
