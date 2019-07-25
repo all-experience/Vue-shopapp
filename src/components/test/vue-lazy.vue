@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h3>I am Vue-lazya</h3>
+      <h3>I am Vue-lazy</h3>
       <ul>
         <li>
           <img src="" alt="">
