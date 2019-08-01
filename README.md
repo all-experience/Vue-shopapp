@@ -18,3 +18,6 @@ Vue-lazy
 Css
 --rem的计算、 默认字体、字体大小、 base css [笔记链接](http://note.youdao.com/noteshare?id=7f81b598d9a60171d31a3da452409d09)
 
+Store
+--store的项目结构（单独业务模块、命名空间的设置）[笔记链接](http://note.youdao.com/noteshare?id=fe031f84bfe81908f42d1f6c41ce9fdf)
+
