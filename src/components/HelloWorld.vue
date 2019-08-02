@@ -29,6 +29,11 @@
     <h4>test</h4>
     <ul>
       <li><router-link :to="'vue-lazy'">vue-lazy</router-link></li>
+      <li><router-link :to="'vue-env'">env-test</router-link></li>
+      <li><router-link :to="'vue-css'">vue-css</router-link></li>
+      <li>
+        <router-link :to="'vue-store'">vue-store</router-link>
+      </li>
     </ul>
   </div>
 </template>
