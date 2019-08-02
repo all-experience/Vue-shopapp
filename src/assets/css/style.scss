@@ -1,0 +1,133 @@
+// jn-page-accountSafe
+.jn-page-accountSafe {
+    width: rem(750);
+    height: 100%;
+    overflow-x: hidden;
+    background: $color-white;
+}
+
+.jn-page-accountSafe .weui-cell {
+    padding: 0 rem(40);
+    height: rem(94);
+    font-size: rem(28);
+}
+
+// jn-page-appVersion
+.jn-page-appVersion {
+    width: rem(750);
+    height: 100%;
+    overflow-x: hidden;
+    background: $color-white;
+}
+
+.jn-page-appVersion .weui-cell {
+    padding: 0 rem(40);
+    height: rem(94);
+    font-size: rem(28);
+}
+
+// jn-page-activity
+.jn-page-activity {
+    width: rem(750);
+    overflow-x: hidden;
+    background: $color-white;
+}
+
+// .jn-page-addressAdd
+.jn-page-addressAdd {
+    width: rem(750);
+    height: 100%;
+    overflow-x: hidden;
+    background: $color-newbg;
+}
+.jn-page-addressAdd .weui-btn_primary {
+  height: rem(82);
+  font-size: rem(32);
+  background: $color-primary;
+  border-radius: rem(20);
+}
+.jn-page-addressAdd .weui-cell {
+    padding: 0 rem(40);
+    min-height: rem(94);
+    font-size: rem(28);
+    color: $color-title;
+}
+.jn-page-addressAdd .vux-x-input{
+  .tl{
+    flex: 1;
+    padding-left: 4vw;
+    color: #AAAAAA;
+    font-size: 4vw;
+  }
+}
+.jn-page-addressAdd .vux-x-textarea.weui-cell {
+    padding-top: rem(20);
+}
+
+// jn-page-addressEdit
+.jn-page-addressEdit {
+    width: rem(750);
+    height: 100%;
+    overflow-x: hidden;
+    background: $color-newbg;
+}
+.jn-page-addressEdit .weui-cell {
+    padding: 0 rem(40);
+    min-height: rem(94);
+    font-size: rem(28);
+    color: $color-title;
+}
+.jn-page-addressEdit .weui-btn_primary {
+  height: rem(82);
+  font-size: rem(32);
+  background: $color-primary;
+  border-radius: rem(20);
+}
+.jn-page-addressEdit .vux-x-input{
+  .tl{
+    flex: 1;
+    padding-left: 4vw;
+    color: $color-title;
+    font-size: rem(28);
+  }
+}
+
+// jn-page-addressManage
+
+
+// custom
+.custom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: $color-white;
+  overflow-x: hidden;
+}
+.vux-popup-dialog {
+  z-index: 997;
+}
+
+// 头部右边的样式
+.jn-header-right-share{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 6.4vw;
+  height: 6.4vw;
+  margin: 2.67vw 0;
+  display: inline-block;
+}
+// fontellipsis 字体的单行省略  接收参数: 宽度width
+.single-ellipsis {
+    white-space:nowrap; //溢出不换行
+    overflow:hidden; //超出的文本隐藏
+    text-overflow:ellipsis; //溢出用省略号显示
+}
+.multi-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box; //作为弹性伸缩盒子模型显示。
+    -webkit-box-orient:vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+    -webkit-line-clamp:2; //显示的
+}

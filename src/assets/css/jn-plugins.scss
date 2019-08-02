@@ -1,0 +1,151 @@
+.fakeInput {
+  position: fixed;
+  z-index: -999;
+  top: -999px;
+  left: -999px;
+  background: none;
+  border: 0;
+  outline: none;
+  appearance: none;
+}
+/**     confirm样式        **/
+.jn-confirm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1005;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /*********   普通样式    **********/
+  .confirm-contentImg {
+    margin: 0 auto;
+  }
+  .confirm-dialog {
+    min-height: rem(208);
+    width: rem(540);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background: #ffffff;
+    border-radius: rem(32);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .confirm-contents {
+      flex: 1;
+      padding: rem(34) rem(32);
+      .content-title {
+        font-size: rem(32);
+        color: $text-color;
+        text-align: center;
+        line-height: rem(40);
+      }
+      .content-details {
+        margin-top: rem(16);
+        font-size: rem(26);
+        color: $text-color;
+        line-height: rem(32);
+        text-align: center;
+      }
+    }
+    .confirm-buttons {
+      box-sizing: border-box;
+      height: rem(88);
+      display: flex;
+      div {
+        flex: 50%;
+        color: #fca800;
+        font-size: rem(32);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .confirm-buttons-a {
+      div {
+        line-height: rem(88);
+        text-align: center;
+        font-size: rem(32);
+        color: #fca800;
+      }
+    }
+  }
+  /*********   验证码样式    **********/
+  .confirm-dialog {
+    .content-title-code {
+      font-size: rem(32);
+      color: $text-color;
+      text-align: center;
+      line-height: rem(40);
+      position: relative;
+      font-weight: bold;
+      margin-top: rem(24);
+      .confirm-close {
+        width: rem(48);
+        height: rem(48);
+        position: absolute;
+        left: rem(12);
+        top: 0;
+      }
+    }
+  }
+  .content-code-img {
+    padding-top: rem(64);
+    max-width: rem(200);
+    margin: 0 auto;
+  }
+  .content-code-input {
+    margin-top: rem(32);
+    padding: 0 rem(72) rem(72);
+    display: flex;
+    justify-content: space-around;
+    span {
+      display: block;
+      width: rem(80);
+      height: rem(80);
+      background: #F2F2F2;
+      text-align: center;
+      line-height: rem(80);
+      &.active {
+        border: rem(2) solid #fca800;
+        border-radius: rem(8);
+      }
+    }
+  }
+}
+
+/**     loding样式       **/
+.loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  // background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  .loading-box {
+    width: rem(200);
+    height: rem(200);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background: #fff;
+    border-radius: rem(32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading-img {
+      width: rem(110);
+      margin: 0 auto;
+    } 
+  }
+  .loading-text {
+    margin-top: rem(10);
+    text-align: center;
+    font-size: rem(24);
+    color: #332500;
+  }
+}
