@@ -6,6 +6,11 @@ Vue.use(store)
 import VueLazyload from 'vue-lazyload'
 import './assets/css/base.scss'
 
+// even-bus
+Vue.prototype.$eventBus = new Vue({
+  name: 'bus'
+})
+
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   error: 'dist/error.png',

@@ -34,6 +34,9 @@
       <li>
         <router-link :to="'vue-store'">vue-store</router-link>
       </li>
+      <li>
+        <router-link :to="'vue-messenger'">Vue组件的通信</router-link>
+      </li>
     </ul>
   </div>
 </template>
