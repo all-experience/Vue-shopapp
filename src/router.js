@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-const VueLazy = () => import(/* webpackChunkName: "vue-lazy" */ '@/components/test/vue-lazy.vue')
-const EnvTest = () => import(/* webpackChunkName: "env-test" */ '@/components/env/process.vue')
-const CssTest = () => import(/* webpackChunkName: "rem-test" */ '@/components/css/css.vue')
-const VueStore = () => import(/* webpackChunkName: "vue-store" */ '@/components/vue-store/index.vue')
-const Messenger = () => import(/* webpackChunkName: "vue-messenger" */ '@/components/messenger/index.vue')
-const MessengerBrother = () => import(/* webpackChunkName: "vue-MessengerBrother" */ '@/components/messenger/brother.vue')
-const GrandChildren = () => import(/* webpackChunkName: "vue-GrandChildren" */ '@/components/messenger/grandchildren.vue')
+import Home from '@/views/Home.vue'
+const VueLazy = () => import(/* webpackChunkName: "vue-lazy" */ '@/views/vue-lazy/vue-lazy.vue')
+const EnvTest = () => import(/* webpackChunkName: "env-test" */ '@/views/env/process.vue')
+const CssTest = () => import(/* webpackChunkName: "rem-test" */ '@/views/css/css.vue')
+const VueStore = () => import(/* webpackChunkName: "vue-store" */ '@/views/vue-store/index.vue')
+const Messenger = () => import(/* webpackChunkName: "vue-messenger" */ '@/views/messenger/index.vue')
+const MessengerBrother = () => import(/* webpackChunkName: "vue-MessengerBrother" */ '@/views/messenger/brother.vue')
+const GrandChildren = () => import(/* webpackChunkName: "vue-GrandChildren" */ '@/views/messenger/grandchildren.vue')
 
 Vue.use(Router)
 

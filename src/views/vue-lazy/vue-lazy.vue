@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import children from '@/components/test/vue-lazy-children'
+import children from '@/components/vue-lazy/vue-lazy-children'
 
 export default {
   components: {
