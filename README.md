@@ -1,8 +1,10 @@
 # vue-shopapp
 
 ## 描述
-> 这里收纳关于Vue-shopapp的核心Demo
+> 这里收纳关于Vue-shopapp的核心Demo，目的是为了脱离业务，能够单独写出项目架构来。
 > 后续会将核心demo提炼到架构的github仓库中。
+
+
 
 ## 目录
 
