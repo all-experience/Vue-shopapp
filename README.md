@@ -27,3 +27,6 @@ Css
 Store
 --store的项目结构（单独业务模块、命名空间的设置）[笔记链接](http://note.youdao.com/noteshare?id=fe031f84bfe81908f42d1f6c41ce9fdf)
 /vue-store
+
+Loading
+---loading 、toast、comfirm [笔记链接](http://note.youdao.com/noteshare?id=10de9791b8101048bafbfc248d2b0cbc)

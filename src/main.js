@@ -6,6 +6,16 @@ Vue.use(store)
 import VueLazyload from 'vue-lazyload'
 import './assets/css/base.scss'
 
+// loading组件
+import jnLoading from '@/utils/loading/jn-loading'
+Vue.use(jnLoading)
+import Loading from './utils/loading'
+Vue.use(Loading)
+import toast from '@/utils/toast'
+Vue.use(toast)
+import modal from '@/utils/modal'
+Vue.use(modal)
+
 // even-bus
 Vue.prototype.$eventBus = new Vue({
   name: 'bus'

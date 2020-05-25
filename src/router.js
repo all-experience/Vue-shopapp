@@ -8,6 +8,8 @@ const VueStore = () => import(/* webpackChunkName: "vue-store" */ '@/views/vue-s
 const Messenger = () => import(/* webpackChunkName: "vue-messenger" */ '@/views/messenger/index.vue')
 const MessengerBrother = () => import(/* webpackChunkName: "vue-MessengerBrother" */ '@/views/messenger/brother.vue')
 const GrandChildren = () => import(/* webpackChunkName: "vue-GrandChildren" */ '@/views/messenger/grandchildren.vue')
+const Loading = () => import(/* webpackChunkName: "vue-loading" */ '@/views/loading')
+
 
 Vue.use(Router)
 
@@ -19,71 +21,69 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
+    }, {
       path: '/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    },
-    {
+    }, {
       path: '/vue-lazy',
       name: 'vue-lazy',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: VueLazy
-    },
-    {
+    }, {
       path: '/vue-env',
       name: 'env-test',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: EnvTest
-    },
-    {
+    }, {
       path: '/vue-css',
       name: 'css-test',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: CssTest
-    },
-    {
+    }, {
       path: '/vue-store',
       name: 'vue-store',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: VueStore
-    },
-    {
+    }, {
       path: '/vue-messenger',
       name: 'vue-messenger',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: Messenger
-    },
-    {
+    }, {
       path: '/messenger-brother',
       name: 'messenger-brother',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: MessengerBrother
-    },
-    {
+    }, {
       path: '/messenger-grandchildren',
       name: 'messenger-grandchildren',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: GrandChildren
+    }, {
+      path: '/loading',
+      name: 'loading',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: Loading
     }
-    
   ]
 })

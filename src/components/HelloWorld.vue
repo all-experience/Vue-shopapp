@@ -3,14 +3,8 @@
     <h1>{{ msg }}</h1>
     <h2>Demo</h2>
     <ul>
-      <li><router-link :to="'vue-lazy'">vue-lazy</router-link></li>
-      <li><router-link :to="'vue-env'">env-test</router-link></li>
-      <li><router-link :to="'vue-css'">vue-css</router-link></li>
-      <li>
-        <router-link :to="'vue-store'">vue-store</router-link>
-      </li>
-      <li>
-        <router-link :to="'vue-messenger'">Vue组件的通信</router-link>
+      <li v-for="(item, index) in demos" :key="index">
+        <router-link :to="item.route">{{item.title}}</router-link>
       </li>
     </ul>
   </div>
@@ -21,6 +15,29 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data: () => {
+    return {
+      demos: [{
+        title: 'vue-lazy',
+        route: 'vue-lazy'
+      }, {
+        title: 'env-test',
+        route: 'vue-env'
+      }, {
+        title: 'vue-css',
+        route: 'vue-css'
+      }, {
+        title: 'vue-store',
+        route: 'vue-store'
+      }, {
+        title: 'Vue组件的通信',
+        route: 'vue-messenger'
+      }, {
+        title: 'vue-loading',
+        route: 'loading'
+      }]
+    }
   }
 }
 </script>
