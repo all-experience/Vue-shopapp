@@ -13,7 +13,6 @@
     <div>
       <h1>comfirm</h1>
       <div><button @click="showComfirm">点击显示comfirm</button></div>
-      <div><button @click="hideComfirm">点击隐藏comfirm</button></div>
     </div>
   </div>
 </template>
@@ -54,14 +53,16 @@ export default {
     },
     // comfirm
     showComfirm () {
-      console.log('showComfirm')
       this.$showModal({
         title: 'i am modal',
-        content: 'i am comtent'
+        content: 'i am content',
+        confirmClick: () => {
+          console.log('comfirm')
+        },
+        cancelClick: () => {
+          console.log('cancel')
+        }
       })
-    },
-    hideComfirm () {
-      console.log('hideComfirm')
     }
   }
 }
